@@ -1,7 +1,60 @@
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 body{
     font-family: sans-serif;
  
+    /* height: 100vh; */
 }
+.container{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.left-slider{
+    height: 100%;
+    width: 35%;
+    position: absolute;
+
+}
+.left-slider > div{
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left-slider h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+.right-slider{
+    height: 100%;
+    position: absolute;
+    left: 35%;
+    width: 65%;
+}
+.right-slider div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+.container .action-buttons .down-button{
+    position: absolute;
+    top: 50%;
+    left: 35%; 
+    z-index: 100;
+}
+/* .up-button{
+    color: grey;
+   padding: 10px;
+   font-size: 20px;
+   border: none;
+} */
